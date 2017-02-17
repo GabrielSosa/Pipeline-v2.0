@@ -6,6 +6,9 @@
 <body>
 <?php
 	echo "Hola mundo";
+
+	$a = 1+3;
+	echo $a;
 ?>
 </body>
 </html>
