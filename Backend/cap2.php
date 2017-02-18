@@ -106,7 +106,7 @@
 
 	function factorGradienteAritmetico($n, $Gradiente, $i){
 
-		return $Gradiente * ((1/$i)*(((pow((1 + $i),$n) - 1) / $i) - n));
+		return $Gradiente * ((1/$i)*(((pow((1 + $i),$n) - 1) / $i) - $n));
 
 	}
 
