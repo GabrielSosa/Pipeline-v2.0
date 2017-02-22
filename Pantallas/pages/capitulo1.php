@@ -133,7 +133,7 @@
 								<table class="table"> 
 									<tr>
 										 <td><button class="btn btn-primary" onclick="Interes();">Calcular</button></td>
-										 <td><input id="Interes" type="text" class="form-control col-xs-3" id="interes_resultado"></td>
+										 <td><input id="interes" type="text" class="form-control col-xs-3" id="interes_resultado"></td>
 
 									</tr>
 								</table>
@@ -143,7 +143,7 @@
                                         var valor_futuro = document.getElementById("valor_futuro").value;
                         
 
-                                        document.getElementById("Interes").value = (valor_futuro-valor_pasado);
+                                        document.getElementById("interes").value = valor_futuro - valor_presente;
 
                                     }
                                 </script>
