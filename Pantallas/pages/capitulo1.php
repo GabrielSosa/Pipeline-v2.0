@@ -3,8 +3,6 @@
 
 <head>
 
-
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -92,14 +90,13 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Formulas capitulo 2</h1>
+                    <h1 class="page-header">Formulas Capitulo 1</h1>
                 </div>
                 <!-- /.col-lg-12 -->
-        </div>
+            </div>
             <!-- /.row -->
-           <!-- aca comienza el div con el recuadro copienlo y peguenlo para las difernetes formulas -->
             <form>
-            <div class="row">
+           <div class="row">
                 
                   
                   <!-- aca comienza el div con el recuadro copienlo y peguenlo para las difernetes formulas -->
@@ -108,7 +105,7 @@
                         <div class="panel-heading">
                             <div class="row" >
                                 <div class="col-xs-3">
-                                    <div >Tasa de Interes Nominal</div>
+                                    <div >Interes</div>
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     
@@ -118,16 +115,74 @@
                         <a href="#">
                            <table class="table"> 
 									<tr>
-										<td><label>Tasa de Interes</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										<td><label>valor Futuro</label></td>
+										<td><input  id="valor_futuro" type="text" class="form-control col-xs-6"></td>
 
 									</tr>
 									<tr>
-										<td><label>Numero de Periodos</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										<td><label>Valor Presente</label></td>
+										<td><input  id="valor_presente" type="text" class="form-control col-xs-6"></td>
+									</tr>
+								</table>
+                        </a>
+                         
+                    </div>
+                           
+                            <div class="panel-footer row">
+								<table class="table"> 
+									<tr>
+										 <td><button class="btn btn-primary" onclick="Interes();">Calcular</button></td>
+										 <td><input id="Interes" type="text" class="form-control col-xs-3" id="interes_resultado"></td>
 
 									</tr>
-									
+								</table>
+								<script type="text/javascript">
+                                        function Interes(){
+                                        var valor_presente = document.getElementById("valor_presente").value;
+                                        var valor_futuro = document.getElementById("valor_futuro").value;
+                        
+
+                                        document.getElementById("Interes").value = valor_presente-valor_futuro;
+
+                                    }
+                                </script>
+
+                            </div>
+                </div>
+                
+              
+        </div>
+           </form>
+                
+                 <form>
+           <div class="row">
+                
+                  
+                  <!-- aca comienza el div con el recuadro copienlo y peguenlo para las difernetes formulas -->
+                   <div class="" id="aws">
+                    <div class="panel panel-primary" style="height:250px"  >
+                        <div class="panel-heading">
+                            <div class="row" >
+                                <div class="col-xs-3">
+                                    <div >Tasa de Interes</div>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                           <table class="table"> 
+									<tr>
+										<td><label>Valor Presente</label></td>
+										 <td><input type="text" class="form-control col-xs-6" id="valor_presente_Tazai"></td>
+
+									</tr>
+									<tr>
+										<td><label>Interes Acumulado</label></td>
+										 <td><input type="text" class="form-control col-xs-6" id="interes_acumulado_Tazai"></td>
+
+									</tr>
 								</table>
                         </a>
                          
@@ -149,15 +204,20 @@
               
         </div>
            </form>
-
             <!-- aca comienza el div con el recuadro copienlo y peguenlo para las difernetes formulas -->
             <!-- /.row -->
-      <div class="" id="aws">
+
+            <form>
+           <div class="row">
+                
+                  
+                  <!-- aca comienza el div con el recuadro copienlo y peguenlo para las difernetes formulas -->
+                   <div class="" id="aws">
                     <div class="panel panel-primary" style="height:250px"  >
                         <div class="panel-heading">
                             <div class="row" >
                                 <div class="col-xs-3">
-                                    <div >Tasa de Interes Efectiva</div>
+                                    <div >Tasa de Rendimiento</div>
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     
@@ -166,199 +226,39 @@
                         </div>
                         <a href="#">
                            <table class="table"> 
-									<tr>
-										<td><label>Frecuencia de Composición</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+                                    <tr>
+                                        <td><label>Valor Presente</label></td>
+                                         <td><input type="text" class="form-control col-xs-6" id="valor_presente_Tazai"></td>
 
-									</tr>
-									<tr>
-										<td><label>Periodo de Tiempo</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Interes Acumulado</label></td>
+                                         <td><input type="text" class="form-control col-xs-6" id="interes_acumulado_Tazai"></td>
 
-									</tr><tr>
-										<td><label>tasa interés nominal Anual </label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
-
-									</tr>
-									
-								</table>
+                                    </tr>
+                                </table>
                         </a>
                          
                     </div>
                            
                             <div class="panel-footer row">
-								<table class="table"> 
-									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3"></td>
+                                <table class="table"> 
+                                    <tr>
+                                         <td><button class="btn btn-primary">Calcular</button></td>
+                                         <td><input type="text" class="form-control col-xs-3"></td>
 
-									</tr>
-								</table>
-								  	
-
-                            </div>
-                </div>
-                        <div class="" id="aws">
-                    <div class="panel panel-primary" style="height:250px"  >
-                        <div class="panel-heading">
-                            <div class="row" >
-                                <div class="col-xs-3">
-                                    <div >valor futuro con una tasa efectiva</div>
-                                </div>
-                                <div class="col-xs-9 text-right">
+                                    </tr>
+                                </table>
                                     
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                           <table class="table"> 
-									<tr>
-										<td><label>Numero de Periodos de Capitalización por Año</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
-
-									</tr>
-									<tr>
-										<td><label>Tasa de Interés Efectiva por Periodo de Composición </label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
-
-									</tr><tr>
-										<td><label>Monto Principal</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
-
-									</tr>
-									
-								</table>
-                        </a>
-                         
-                    </div>
-                           
-                            <div class="panel-footer row">
-								<table class="table"> 
-									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3"></td>
-
-									</tr>
-								</table>
-								  	
 
                             </div>
                 </div>
-                        <div class="" id="aws">
-                    <div class="panel panel-primary" style="height:250px"  >
-                        <div class="panel-heading">
-                            <div class="row" >
-                                <div class="col-xs-3">
-                                    <div >Tasa Interes Anual Efectiva</div>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                           <table class="table"> 
-									<tr>
-										<td><label> Tasa para un Periodo de Composición</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
-
-									</tr>
-									
-								</table>
-                        </a>
-                         
-                    </div>
-                           
-                            <div class="panel-footer row">
-								<table class="table"> 
-									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3"></td>
-
-									</tr>
-								</table>
-								  	
-
-                            </div>
-                </div>
-                        <div class="" id="aws">
-                    <div class="panel panel-primary" style="height:250px"  >
-                        <div class="panel-heading">
-                            <div class="row" >
-                                <div class="col-xs-3">
-                                    <div >Tasa de Interés Efectiva por Periodo de Composición </div>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                           <table class="table"> 
-									<tr>
-										<td><label>Periodo de Composicion</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
-
-									</tr>
-									<tr>
-										<td><label>Tasa para un Periodo de Composición</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
-
-									</tr>
-								</table>
-                        </a>
-                         
-                    </div>
-                           
-                            <div class="panel-footer row">
-								<table class="table"> 
-									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3"></td>
-
-									</tr>
-								</table>
-								  	
-
-                            </div>
-                </div>
-                        <div class="" id="aws">
-                    <div class="panel panel-primary" style="height:250px"  >
-                        <div class="panel-heading">
-                            <div class="row" >
-                                <div class="col-xs-3">
-                                    <div >Tasa de Interes Efectiva para Capitalizacion Continua Anual </div>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                           <table class="table"> 
-									<tr>
-										<td><label>Tasa Anual Nominal</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
-
-									</tr>
-									
-								</table>
-                        </a>
-                         
-                    </div>
-                           
-                            <div class="panel-footer row">
-								<table class="table"> 
-									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3"></td>
-
-									</tr>
-								</table>
-								  	
-
-                            </div>
-                </div>
+                
+              
+        </div>
+           </form>
+            <!-- aca comienza el div con el recuadro copienlo y peguenlo para las difernetes formulas -->
+            <!-- /.row -->
                     <!-- /.panel .chat-panel -->
                 </div>
                 <!-- /.col-lg-4 -->

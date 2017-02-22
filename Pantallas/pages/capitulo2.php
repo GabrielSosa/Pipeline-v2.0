@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Prototipo Pipeline v0.1</a>
+                <a class="navbar-brand" href="index.php">Prototipo Pipeline v0.1</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -70,7 +70,7 @@
                             <!-- /input-group -->
                         </li>
                        <li>
-                            <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 1</a>
+                            <a href="capitulo1.php"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 1</a>
                         </li>
                         <li>
                             <a href="capitulo2.php"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 2</a>
