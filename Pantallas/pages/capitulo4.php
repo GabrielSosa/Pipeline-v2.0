@@ -119,12 +119,12 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Tasa de Interes</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										 <td><input id="ti_tasa" type="text" class="form-control col-xs-6"></td>
 
 									</tr>
 									<tr>
 										<td><label>Numero de Periodos</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										 <td><input id="ti_p" type="text" class="form-control col-xs-6"></td>
 
 									</tr>
 									
@@ -136,8 +136,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3"></td>
+										 <td><button class="btn btn-primary" onclick="Tasa_Nominal();">Calcular</button></td>
+										 <td><input id="ti_cal" type="text" class="form-control col-xs-3"></td>
 
 									</tr>
 								</table>
@@ -168,16 +168,16 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Frecuencia de Composición</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										 <td><input id="te_m" type="text" class="form-control col-xs-6"></td>
 
 									</tr>
 									<tr>
 										<td><label>Periodo de Tiempo</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										 <td><input id="te_t" type="text" class="form-control col-xs-6"></td>
 
 									</tr><tr>
-										<td><label>tasa interés nominal Anual </label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										<td><label>tasa interés efectiva Anual </label></td>
+										 <td><input id="te_r" type="text" class="form-control col-xs-6"></td>
 
 									</tr>
 									
@@ -189,8 +189,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3"></td>
+										 <td><button class="btn btn-primary" onclick="Tasa_Efectiva()">Calcular</button></td>
+										 <td><input id="te_calc" type="text" class="form-control col-xs-3"></td>
 
 									</tr>
 								</table>
@@ -214,16 +214,16 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Numero de Periodos de Capitalización por Año</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										 <td><input id="vf_m" type="text" class="form-control col-xs-6"></td>
 
 									</tr>
 									<tr>
 										<td><label>Tasa de Interés Efectiva por Periodo de Composición </label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										 <td><input id="vf_i" type="text" class="form-control col-xs-6"></td>
 
 									</tr><tr>
 										<td><label>Monto Principal</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										 <td><input id="vf_p" type="text" class="form-control col-xs-6"></td>
 
 									</tr>
 									
@@ -235,8 +235,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3"></td>
+										 <td><button class="btn btn-primary " onclick="Valor_Futuro()">Calcular</button></td>
+										 <td><input id="vf_calc" type="text" class="form-control col-xs-3"></td>
 
 									</tr>
 								</table>
@@ -260,9 +260,14 @@
                            <table class="table"> 
 									<tr>
 										<td><label> Tasa para un Periodo de Composición</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										 <td><input id="t_pc" type="text" class="form-control col-xs-6"></td>
 
 									</tr>
+                                    <tr>
+                                        <td><label> Número de Periodos de Capitalización o Composición por Año</label></td>
+                                         <td><input id="t_pc_m" type="text" class="form-control col-xs-6"></td>
+
+                                    </tr>
 									
 								</table>
                         </a>
@@ -272,8 +277,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3"></td>
+										 <td><button class="btn btn-primary" onclick="Tasa_Interes_anual_Efectiva()">Calcular</button></td>
+										 <td><input id="t_pc_calc" type="text" class="form-control col-xs-3"></td>
 
 									</tr>
 								</table>
@@ -296,13 +301,13 @@
                         <a href="#">
                            <table class="table"> 
 									<tr>
-										<td><label>Periodo de Composicion</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										<td><label>Periodo de Composición</label></td>
+										 <td><input id="tie_pc_m" type="text" class="form-control col-xs-6"></td>
 
 									</tr>
 									<tr>
 										<td><label>Tasa para un Periodo de Composición</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										 <td><input id="tie_pc_i" type="text" class="form-control col-xs-6"></td>
 
 									</tr>
 								</table>
@@ -313,8 +318,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3"></td>
+										 <td><button class="btn btn-primary" onclick="TI_Efectiva_Por_Pc();">Calcular</button></td>
+										 <td><input id="tie_pc_calc" type="text" class="form-control col-xs-3"></td>
 
 									</tr>
 								</table>
@@ -338,7 +343,7 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Tasa Anual Nominal</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										 <td><input id="ta_nom" type="text" class="form-control col-xs-6"></td>
 
 									</tr>
 									
@@ -350,8 +355,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3"></td>
+										 <td><button class="btn btn-primary" onclick="TIE_Para_Capitalizacion_Continua()">Calcular</button></td>
+										 <td><input id="ta_nom_calc" type="text" class="form-control col-xs-3"></td>
 
 									</tr>
 								</table>
@@ -386,6 +391,91 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
+
+     <script type="text/javascript">
+        //tasa de interes nominal
+    function Tasa_Nominal(){
+// donde: r =tasa de interes 
+//        n= numero de periodos
+        var t=document.getElementById("ti_tasa").value/100;
+        var n=document.getElementById("ti_p").value;
+        document.getElementById("ti_cal").value= t*n;
+
+    }
+
+    // Tasa de interes efectiva
+    function Tasa_Efectiva(){
+// t es periodo de tiempo (solicitar al usuario) t se cancela de la formula segun el libro
+//m es frecuencia de composición (solicitar al usuario)
+//r es tasa interés nominal anual (Solicitar al usuario)
+        var t=document.getElementById("te_t").value;
+        var m=document.getElementById("te_m").value;
+        var r=document.getElementById("te_r").value/100;
+        document.getElementById("te_calc").value= r/m;
+
+    }
+
+
+    //valor futuro con una tasa efectiva
+    function Valor_Futuro(){
+/*
+M es numero de periodos de capitalización por año (Solicitar al usuario)
+i = tasa de interés efectiva por periodo de composición (Solicitar al usuario)
+P es el monto principal
+ */
+     var p=document.getElementById("vf_p").value;
+
+     var m=document.getElementById("vf_m").value;
+     var i=document.getElementById("vf_i").value/100;
+     var r=Math.pow(1+i,m);
+    document.getElementById("vf_calc").value= parseFloat(p)+r;
+
+    }
+
+    function Tasa_Interes_anual_Efectiva(){
+        /*
+i es la tasa para un periodo de
+composición.
+
+ */
+         var i=document.getElementById("t_pc").value/100;
+          var m=document.getElementById("t_pc_m").value;
+        var ia=Math.pow(1+parseFloat(i),parseInt(m) )-1;
+        document.getElementById("t_pc_calc").value= ia;
+    }
+//tasa de interés fectiva por periodo de composición
+    // esta formula es para cuando se conoce el valor de ia(tasa de interes anual efectiva)
+   
+    function TI_Efectiva_Por_Pc(){
+        var ia=document.getElementById("tie_pc_i").value/100;
+        var m=document.getElementById("tie_pc_m").value;
+        
+        var i=Math.pow(1+parseFloat(ia), 1/parseInt(m)) -1;
+        document.getElementById("tie_pc_calc").value= i;
+    
+
+    }
+/*
+pc=periodo de composicion
+i es la tasa para un periodo de
+composición.
+
+
+ */     
+       
+    
+
+    //tasa de interes efectiva para capitalizacion continua anual
+    function TIE_Para_Capitalizacion_Continua(){
+        // r = tasa anual nominal
+        var ia=document.getElementById("ta_nom").value/100;
+         var i=Math.pow(Math.E,ia)-1;
+         document.getElementById("ta_nom_calc").value= i;
+    }
+
+
+
+    </script>
 
 </body>
 
