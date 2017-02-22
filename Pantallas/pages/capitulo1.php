@@ -156,6 +156,258 @@
            </form>
                
 
+              
+              
+              
+           <form>
+           <div class="row">
+                
+                  
+                 
+                   <div class="" id="aws">
+                    <div class="panel panel-primary" style="height:250px"  >
+                        <div class="panel-heading">
+                            <div class="row" >
+                                <div class="col-xs-3">
+                                    <div >Tasa Interes</div>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                           <table class="table"> 
+									<tr>
+										<td><label>Interes Acumulado</label></td>
+										<td><input  id="interes_acumulado" type="text" class="form-control col-xs-6"></td>
+
+									</tr>
+									<tr>
+										<td><label>Valor Presente</label></td>
+										<td><input  id="valor_presente1" type="text" class="form-control col-xs-6"></td>
+									</tr>
+								</table>
+                        </a>
+                         
+                    </div>
+                           
+                            <div class="panel-footer row">
+								<table class="table"> 
+									<tr>
+										 <td><button class="btn btn-primary" onclick="TasaInteres();">Calcular</button></td>
+										 <td><input id="tasainteres" type="text" class="form-control col-xs-3" id="tasainteres_resultado"></td>
+
+									</tr>
+								</table>
+								<script type="text/javascript">
+                                        function TasaInteres(){
+                                        var interes_acumulado = document.getElementById("interes_acumulado").value;
+                                        var valor_presente1 = document.getElementById("valor_presente1").value;
+                        
+
+                                        document.getElementById("tasainteres").value = (interes_acumulado / valor_presente1)*100;
+
+                                    }
+                                </script>
+
+                            </div>
+                </div>
+                
+              
+        </div>
+           </form>
+              
+              
+           <form>
+           <div class="row">
+                
+                  
+                 
+                   <div class="" id="aws">
+                    <div class="panel panel-primary" style="height:250px"  >
+                        <div class="panel-heading">
+                            <div class="row" >
+                                <div class="col-xs-3">
+                                    <div >Interes Simple</div>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                           <table class="table"> 
+									<tr>
+										<td><label>Valor Presente</label></td>
+										<td><input  id="valor_presente2" type="text" class="form-control col-xs-6"></td>
+
+									</tr>
+									<tr>
+										<td><label>Numero De Periodos</label></td>
+										<td><input  id="numero_de_periodos" type="text" class="form-control col-xs-6"></td>
+									</tr>
+									<tr>
+										<td><label>Tasa De Interes (en formato decimal ejemplo 5% quivale 0.05)</label></td>
+										<td><input  id="tasa_de_interes" type="text" class="form-control col-xs-6"></td>
+									</tr>
+								</table>
+                        </a>
+                         
+                    </div>
+                           
+                            <div class="panel-footer row">
+								<table class="table"> 
+									<tr>
+										 <td><button class="btn btn-primary" onclick="InteresSimple();">Calcular</button></td>
+										 <td><input id="interessimple" type="text" class="form-control col-xs-3" id="interessimple_resultado"></td>
+
+									</tr>
+								</table>
+								<script type="text/javascript">
+                                        function InteresSimple(){
+                                        var valor_presente2 = document.getElementById("valor_presente2").value;
+                                        var numero_de_periodos = document.getElementById("numero_de_periodos").value;
+                                        var tasa_de_interes = document.getElementById("tasa_de_interes").value;
+                        
+
+                                        document.getElementById("interessimple").value = valor_presente2*numero_de_periodos*tasa_de_interes;
+
+                                    }
+                                </script>
+
+                            </div>
+                </div>
+                
+              
+        </div>
+           </form>  
+              
+              
+              
+            <form>
+           <div class="row">
+                
+                  
+                 
+                   <div class="" id="aws">
+                    <div class="panel panel-primary" style="height:250px"  >
+                        <div class="panel-heading">
+                            <div class="row" >
+                                <div class="col-xs-3">
+                                    <div >Interes Compuesto</div>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                           <table class="table"> 
+									<tr>
+										<td><label>Valor Presente</label></td>
+										<td><input  id="valor_presente3" type="text" class="form-control col-xs-6"></td>
+
+									</tr>
+									<tr>
+										<td><label>Numero De Periodos</label></td>
+										<td><input  id="numero_de_periodos1" type="text" class="form-control col-xs-6"></td>
+									</tr>
+									<tr>
+										<td><label>Tasa De Interes (en formato decimal ejemplo 5% quivale 0.05)</label></td>
+										<td><input  id="tasa_de_interes1" type="text" class="form-control col-xs-6"></td>
+									</tr>
+								</table>
+                        </a>
+                         
+                    </div>
+                           
+                            <div class="panel-footer row">
+								<table class="table"> 
+									<tr>
+										 <td><button class="btn btn-primary" onclick="InteresCompuesto();">Calcular</button></td>
+										 <td><input id="interescompuesto" type="text" class="form-control col-xs-3" id="interescompuesto_resultado"></td>
+
+									</tr>
+								</table>
+								<script type="text/javascript">
+                                        function InteresCompuesto(){
+                                        var valor_presente3 = document.getElementById("valor_presente3").value;
+                                        var numero_de_periodos1 = document.getElementById("numero_de_periodos1").value;
+                                        var tasa_de_interes1 = document.getElementById("tasa_de_interes1").value;
+                                        
+
+                                        document.getElementById("interescompuesto").value =valor_presente3*Math.pow((parseFloat(tasa_de_interes1) + 1),numero_de_periodos1)-valor_presente3;
+                                    }
+                                </script>
+
+                            </div>
+                </div>
+                
+              
+        </div>
+           </form>   
+              
+               
+                
+                    <form>
+           <div class="row">
+                
+                  
+                 
+                   <div class="" id="aws">
+                    <div class="panel panel-primary" style="height:250px"  >
+                        <div class="panel-heading">
+                            <div class="row" >
+                                <div class="col-xs-3">
+                                    <div >Flujo De Efectivo Neto</div>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                           <table class="table"> 
+									<tr>
+										<td><label>Entrada Efectivo Neto</label></td>
+										<td><input  id="En_Efec_Ne" type="text" class="form-control col-xs-6"></td>
+
+									</tr>
+									<tr>
+										<td><label>Salida Efectivo Neto</label></td>
+										<td><input  id="Sa_Efec_Ne" type="text" class="form-control col-xs-6"></td>
+									</tr>
+								</table>
+                        </a>
+                         
+                    </div>
+                           
+                            <div class="panel-footer row">
+								<table class="table"> 
+									<tr>
+										 <td><button class="btn btn-primary" onclick="FlujoEfectivoNeto();">Calcular</button></td>
+										 <td><input id="flujoefectivoneto" type="text" class="form-control col-xs-3" id="flujoefectivoneto_resultado"></td>
+
+									</tr>
+								</table>
+								<script type="text/javascript">
+                                        function FlujoEfectivoNeto(){
+                                        var En_Efec_Ne = document.getElementById("En_Efec_Ne").value;
+                                        var Sa_Efec_Ne = document.getElementById("Sa_Efec_Ne").value;
+                        
+
+                                        document.getElementById("flujoefectivoneto").value = En_Efec_Ne - Sa_Efec_Ne;
+
+                                    }
+                                </script>
+
+                            </div>
+                </div>
+                
+              
+        </div>
+           </form>      
                
                  
             <!-- aca comienza el div con el recuadro copienlo y peguenlo para las difernetes formulas -->
