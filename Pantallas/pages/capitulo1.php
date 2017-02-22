@@ -95,11 +95,12 @@
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
-            <form>
+             <!-- aca comienza el div con el recuadro copienlo y peguenlo para las difernetes formulas -->
+           <form>
            <div class="row">
                 
                   
-                  <!-- aca comienza el div con el recuadro copienlo y peguenlo para las difernetes formulas -->
+                 
                    <div class="" id="aws">
                     <div class="panel panel-primary" style="height:250px"  >
                         <div class="panel-heading">
@@ -142,7 +143,7 @@
                                         var valor_futuro = document.getElementById("valor_futuro").value;
                         
 
-                                        document.getElementById("Interes").value = valor_presente-valor_futuro;
+                                        document.getElementById("Interes").value = (valor_futuro-valor_pasado);
 
                                     }
                                 </script>
@@ -153,110 +154,10 @@
               
         </div>
            </form>
-                
-                 <form>
-           <div class="row">
-                
-                  
-                  <!-- aca comienza el div con el recuadro copienlo y peguenlo para las difernetes formulas -->
-                   <div class="" id="aws">
-                    <div class="panel panel-primary" style="height:250px"  >
-                        <div class="panel-heading">
-                            <div class="row" >
-                                <div class="col-xs-3">
-                                    <div >Tasa de Interes</div>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                           <table class="table"> 
-									<tr>
-										<td><label>Valor Presente</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="valor_presente_Tazai"></td>
+               
 
-									</tr>
-									<tr>
-										<td><label>Interes Acumulado</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="interes_acumulado_Tazai"></td>
-
-									</tr>
-								</table>
-                        </a>
-                         
-                    </div>
-                           
-                            <div class="panel-footer row">
-								<table class="table"> 
-									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3"></td>
-
-									</tr>
-								</table>
-								  	
-
-                            </div>
-                </div>
-                
-              
-        </div>
-           </form>
-            <!-- aca comienza el div con el recuadro copienlo y peguenlo para las difernetes formulas -->
-            <!-- /.row -->
-
-            <form>
-           <div class="row">
-                
-                  
-                  <!-- aca comienza el div con el recuadro copienlo y peguenlo para las difernetes formulas -->
-                   <div class="" id="aws">
-                    <div class="panel panel-primary" style="height:250px"  >
-                        <div class="panel-heading">
-                            <div class="row" >
-                                <div class="col-xs-3">
-                                    <div >Tasa de Rendimiento</div>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                           <table class="table"> 
-                                    <tr>
-                                        <td><label>Valor Presente</label></td>
-                                         <td><input type="text" class="form-control col-xs-6" id="valor_presente_Tazai"></td>
-
-                                    </tr>
-                                    <tr>
-                                        <td><label>Interes Acumulado</label></td>
-                                         <td><input type="text" class="form-control col-xs-6" id="interes_acumulado_Tazai"></td>
-
-                                    </tr>
-                                </table>
-                        </a>
-                         
-                    </div>
-                           
-                            <div class="panel-footer row">
-                                <table class="table"> 
-                                    <tr>
-                                         <td><button class="btn btn-primary">Calcular</button></td>
-                                         <td><input type="text" class="form-control col-xs-3"></td>
-
-                                    </tr>
-                                </table>
-                                    
-
-                            </div>
-                </div>
-                
-              
-        </div>
-           </form>
+               
+                 
             <!-- aca comienza el div con el recuadro copienlo y peguenlo para las difernetes formulas -->
             <!-- /.row -->
                     <!-- /.panel .chat-panel -->
