@@ -3,6 +3,8 @@
 
 <head>
 
+
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -70,13 +72,13 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 1</a>
+                            <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 1</a>
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 2</a>
+                            <a href="capitulo2.php"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 2</a>
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 4</a>
+                            <a href="capitulo4.php"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 4</a>
                         </li>
                         
                        
@@ -90,13 +92,14 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Formulas</h1>
+                    <h1 class="page-header">Formulas capitulo 2</h1>
                 </div>
                 <!-- /.col-lg-12 -->
-            </div>
+        </div>
             <!-- /.row -->
+           <!-- aca comienza el div con el recuadro copienlo y peguenlo para las difernetes formulas -->
             <form>
-           <div class="row">
+            <div class="row">
                 
                   
                   <!-- aca comienza el div con el recuadro copienlo y peguenlo para las difernetes formulas -->
@@ -146,6 +149,7 @@
               
         </div>
            </form>
+
             <!-- aca comienza el div con el recuadro copienlo y peguenlo para las difernetes formulas -->
             <!-- /.row -->
       <div class="" id="aws">

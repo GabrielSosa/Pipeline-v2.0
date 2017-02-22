@@ -69,16 +69,15 @@
                             </div>
                             <!-- /input-group -->
                         </li>
-                        <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 1</a>
+                       <li>
+                            <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 1</a>
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 2</a>
+                            <a href="capitulo2.php"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 2</a>
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 4</a>
+                            <a href="capitulo4.php"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 4</a>
                         </li>
-                        
                        
                     </ul>
                 </div>
@@ -90,7 +89,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Formulas Capitulo 4</h1>
+                    <h1 class="page-header">Formulas Capitulo 2</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -116,16 +115,16 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Valor Presente</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										 <td><input  id="valor_presente" type="text" class="form-control col-xs-6"></td>
 
 									</tr>
 									<tr>
 										<td><label>Tasa de interés</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										 <td><input id="tasa_interes" type="text" class="form-control col-xs-6"></td>
 
 									</tr><tr>
 										<td><label>Periodo de tiempo</label></td>
-										 <td><input type="text" class="form-control col-xs-6"></td>
+										 <td><input id="periodo_tiempo" type="text" class="form-control col-xs-6"></td>
 									</tr>
 								</table>
                         </a>
@@ -135,13 +134,22 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3"></td>
+										 <td><button class="btn btn-primary" onclick="valor_futuro_cantidad_compuesta();">Calcular</button></td>
+										 <td><input id="valor_futuro_compuesta" type="text" class="form-control col-xs-3" ></td>
 
 									</tr>
 								</table>
 								  	
+                                <script type="text/javascript">
+                                    function valor_futuro_cantidad_compuesta(){
+                                        var valor_presente = document.getElementById("valor_presente").value;
+                                        var tasa_interes = document.getElementById("tasa_interes").value;
+                                        var periodo_tiempo = document.getElementById("periodo_tiempo").value;
 
+                                        document.getElementById("valor_futuro_compuesta").value = valor_presente*tasa_interes*periodo_tiempo;
+
+                                    }
+                                </script>
                             </div>
                 </div>
                 
