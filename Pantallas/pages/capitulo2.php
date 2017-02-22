@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Prototipo Pipeline v0.1</a>
+                <a class="navbar-brand" href="index.html">Prototipo Pipeline v0.1</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -70,7 +70,7 @@
                             <!-- /input-group -->
                         </li>
                        <li>
-                            <a href="capitulo1.php"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 1</a>
+                            <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 1</a>
                         </li>
                         <li>
                             <a href="capitulo2.php"><i class="fa fa-dashboard fa-fw"></i> Formulas Cap. 2</a>
@@ -140,16 +140,7 @@
 									</tr>
 								</table>
 								  	
-                                <script type="text/javascript">
-                                    function valor_futuro_cantidad_compuesta(){
-                                        var valor_presente = document.getElementById("valor_presente").value;
-                                        var tasa_interes = document.getElementById("tasa_interes").value;
-                                        var periodo_tiempo = document.getElementById("periodo_tiempo").value;
-
-                                        document.getElementById("valor_futuro_compuesta").value = valor_presente*tasa_interes*periodo_tiempo;
-
-                                    }
-                                </script>
+                               
                             </div>
                 </div>
                 
@@ -176,20 +167,21 @@
                            <table class="table"> 
                                     <tr>
                                         <td><label>Valor futuro</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id ="valor_futuro" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                     <tr>
                                         <td><label>Tasa de interés</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="tasa_interes_2" type="text" class="form-control col-xs-6"></td>
 
                                     </tr><tr>
                                         <td><label>Periodo de tiempo</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id = "periodo_tiempo_2" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                     
                                 </table>
+                                 
                         </a>
                          
                     </div>
@@ -197,19 +189,19 @@
                             <div class="panel-footer row">
                                 <table class="table"> 
                                     <tr>
-                                         <td><button class="btn btn-primary">Calcular</button></td>
-                                         <td><input type="text" class="form-control col-xs-3"></td>
+                                         <td><button onclick="valor_presente_inversion_inicial();" class="btn btn-primary">Calcular</button></td>
+                                         <td><input id ="valor_presente_inicial" type="text" class="form-control col-xs-3"></td>
 
                                     </tr>
                                 </table>
                                     
-
+                               
                             </div>
                 </div>
                 
               
         </div>
-
+                               
         <div class="row">
                 
                   
@@ -230,16 +222,16 @@
                            <table class="table"> 
                                     <tr>
                                         <td><label>Valor anual</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="valor_anual" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                     <tr>
                                         <td><label>Tasa de interés</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="tasa_interes_3" type="text" class="form-control col-xs-6"></td>
 
                                     </tr><tr>
                                         <td><label>Periodo de tiempo</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="periodo_tiempo_3" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                     
@@ -251,8 +243,8 @@
                             <div class="panel-footer row">
                                 <table class="table"> 
                                     <tr>
-                                         <td><button class="btn btn-primary">Calcular</button></td>
-                                         <td><input type="text" class="form-control col-xs-3"></td>
+                                         <td><button onclick= "valor_presente_serie_uniforme();" class="btn btn-primary">Calcular</button></td>
+                                         <td><input id="valor_serie_uniforme" type="text" class="form-control col-xs-3"></td>
 
                                     </tr>
                                 </table>
@@ -284,16 +276,16 @@
                            <table class="table"> 
                                     <tr>
                                         <td><label>Valor Presente</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="valor_presente_2" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                     <tr>
                                         <td><label>Tasa de interes</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="tasa_interes_4" type="text" class="form-control col-xs-6"></td>
 
                                     </tr><tr>
                                         <td><label>Periodo de Tiempo</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="periodo_tiempo_4" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                     
@@ -305,8 +297,8 @@
                             <div class="panel-footer row">
                                 <table class="table"> 
                                     <tr>
-                                         <td><button class="btn btn-primary">Calcular</button></td>
-                                         <td><input type="text" class="form-control col-xs-3"></td>
+                                         <td><button onclick="valor_anual_uniforme();" class="btn btn-primary">Calcular</button></td>
+                                         <td><input id="valor_anu_uniforme" type="text" class="form-control col-xs-3"></td>
 
                                     </tr>
                                 </table>
@@ -338,16 +330,16 @@
                            <table class="table"> 
                                     <tr>
                                         <td><label>Valor futuro</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id ="valor_futuro_2"type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                     <tr>
                                         <td><label>Tasa de interés</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="tasa_interes_5" type="text" class="form-control col-xs-6"></td>
 
                                     </tr><tr>
                                         <td><label>Periodo de tiempo</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="periodo_tiempo_5" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                     
@@ -359,8 +351,8 @@
                             <div class="panel-footer row">
                                 <table class="table"> 
                                     <tr>
-                                         <td><button class="btn btn-primary">Calcular</button></td>
-                                         <td><input type="text" class="form-control col-xs-3"></td>
+                                         <td><button onclick="valor_anual_serie_uniforme();" class="btn btn-primary">Calcular</button></td>
+                                         <td><input id= "valor_anu_serie_uniforme" type="text" class="form-control col-xs-3"></td>
 
                                     </tr>
                                 </table>
@@ -392,16 +384,16 @@
                            <table class="table"> 
                                     <tr>
                                         <td><label>Valor Anual</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="valor_anual_2" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                     <tr>
                                         <td><label>Tasa de interés</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="tasa_interes_6" type="text" class="form-control col-xs-6"></td>
 
                                     </tr><tr>
                                         <td><label>Periodo de tiempo</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="periodo_tiempo_6" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                     
@@ -413,8 +405,8 @@
                             <div class="panel-footer row">
                                 <table class="table"> 
                                     <tr>
-                                         <td><button class="btn btn-primary">Calcular</button></td>
-                                         <td><input type="text" class="form-control col-xs-3"></td>
+                                         <td><button onclick="valor_futuro_serie_uniforme();" class="btn btn-primary">Calcular</button></td>
+                                         <td><input id="valor_futu_serie_uniforme" type="text" class="form-control col-xs-3"></td>
 
                                     </tr>
                                 </table>
@@ -446,16 +438,16 @@
                            <table class="table"> 
                                     <tr>
                                         <td><label>Cantidad Base</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="cantidad_base" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                     <tr>
                                         <td><label>Periodo de tiempo</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="periodo_tiempo_7" type="text" class="form-control col-xs-6"></td>
 
                                     </tr><tr>
                                         <td><label>Gradiente</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="gradiante" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                 </table>
@@ -466,8 +458,8 @@
                             <div class="panel-footer row">
                                 <table class="table"> 
                                     <tr>
-                                         <td><button class="btn btn-primary">Calcular</button></td>
-                                         <td><input type="text" class="form-control col-xs-3"></td>
+                                         <td><button onclick="flujo_efectivo_anio();" class="btn btn-primary">Calcular</button></td>
+                                         <td><input id="flujo_efec_anio" type="text" class="form-control col-xs-3"></td>
 
                                     </tr>
                                 </table>
@@ -499,16 +491,16 @@
                            <table class="table"> 
                                     <tr>
                                         <td><label>Periodo de tiempo</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="periodo_tiempo_8" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                     <tr>
                                         <td><label>Gradiente</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="gradiante_2" type="text" class="form-control col-xs-6"></td>
 
                                     </tr><tr>
                                         <td><label>Tasa de interés</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="tasa_interes_7" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                 </table>
@@ -519,8 +511,8 @@
                             <div class="panel-footer row">
                                 <table class="table"> 
                                     <tr>
-                                         <td><button class="btn btn-primary">Calcular</button></td>
-                                         <td><input type="text" class="form-control col-xs-3"></td>
+                                         <td><button onclick="gradiente_aritmetico();" class="btn btn-primary">Calcular</button></td>
+                                         <td><input id="gradiente_arit" type="text" class="form-control col-xs-3"></td>
 
                                     </tr>
                                 </table>
@@ -552,16 +544,16 @@
                            <table class="table"> 
                                     <tr>
                                         <td><label>Periodo de tiempo</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="periodo_tiempo_9" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                     <tr>
                                         <td><label>Gradiente</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="gradiante_3" type="text" class="form-control col-xs-6"></td>
 
                                     </tr><tr>
                                         <td><label>Tasa de interés</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="tasa_interes_8" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                 </table>
@@ -572,8 +564,8 @@
                             <div class="panel-footer row">
                                 <table class="table"> 
                                     <tr>
-                                         <td><button class="btn btn-primary">Calcular</button></td>
-                                         <td><input type="text" class="form-control col-xs-3"></td>
+                                         <td><button onclick="serie_anual_uniforme();" class="btn btn-primary">Calcular</button></td>
+                                         <td><input id="serie_anu_uniforme" type="text" class="form-control col-xs-3"></td>
 
                                     </tr>
                                 </table>
@@ -605,16 +597,16 @@
                            <table class="table"> 
                                     <tr>
                                         <td><label>Periodo de tiempo</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="periodo_tiempo_10" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                     <tr>
                                         <td><label>Gradiente</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="gradiante_4" type="text" class="form-control col-xs-6"></td>
 
                                     </tr><tr>
                                         <td><label>Tasa de interés</label></td>
-                                         <td><input type="text" class="form-control col-xs-6"></td>
+                                         <td><input id="tasa_interes_9" type="text" class="form-control col-xs-6"></td>
 
                                     </tr>
                                 </table>
@@ -625,8 +617,8 @@
                             <div class="panel-footer row">
                                 <table class="table"> 
                                     <tr>
-                                         <td><button class="btn btn-primary">Calcular</button></td>
-                                         <td><input type="text" class="form-control col-xs-3"></td>
+                                         <td><button onclick="factor_gradiente_aritmetico();" class="btn btn-primary">Calcular</button></td>
+                                         <td><input id="factor_gra_uniforme" type="text" class="form-control col-xs-3"></td>
 
                                     </tr>
                                 </table>
@@ -668,7 +660,94 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
+     <script type="text/javascript">
+        function valor_futuro_cantidad_compuesta(){
+            var valor_presente=parseFloat(document.getElementById("valor_presente").value);
+            var tasa_interes=parseFloat(document.getElementById("tasa_interes").value);
+            var periodo_tiempo=parseFloat(document.getElementById("periodo_tiempo").value);
 
+            document.getElementById("valor_futuro_compuesta").value = Math.round(valor_presente*Math.pow(tasa_interes+1,periodo_tiempo)*100)/100;
+
+        }
+        function valor_presente_inversion_inicial(){
+            var valor_futuro=parseFloat(document.getElementById("valor_futuro").value);
+            var tasa_interes=parseFloat(document.getElementById("tasa_interes_2").value);
+            var periodo_tiempo=parseFloat(document.getElementById("periodo_tiempo_2").value);
+
+            document.getElementById("valor_presente_inicial").value=Math.round((valor_futuro/Math.pow(tasa_interes+1,periodo_tiempo)*100))/100;
+        }
+        function valor_presente_serie_uniforme(){
+            var valor_anual=parseFloat(document.getElementById("valor_anual").value);
+            var tasa_interes=parseFloat(document.getElementById("tasa_interes_3").value);
+            var periodo_tiempo=parseFloat(document.getElementById("periodo_tiempo_3").value);
+            if (tasa_interes!=0){
+                document.getElementById("valor_serie_uniforme").value= Math.round((valor_anual*(Math.pow((1 + tasa_interes), periodo_tiempo) - 1)/(Math.pow((1 + tasa_interes),periodo_tiempo)*periodo_tiempo))*100)/100;
+            }else{
+                document.getElementById("valor_serie_uniforme").value="La tasa de interés debe ser diferente a cero.";
+            }
+        }
+
+        function valor_anual_uniforme(){
+            var valor_presente=parseFloat(document.getElementById("valor_presente_2").value);
+            var tasa_interes=parseFloat(document.getElementById("tasa_interes_4").value);
+            var periodo_tiempo=parseFloat(document.getElementById("periodo_tiempo_4").value);
+            document.getElementById("valor_anu_uniforme").value= Math.round((valor_presente*((tasa_interes * Math.pow((tasa_interes + 1), periodo_tiempo))/(Math.pow((1 + tasa_interes),periodo_tiempo) - 1)))*100)/100;
+
+        }   
+
+        function valor_anual_serie_uniforme(){
+            var valor_futuro= parseFloat(document.getElementById("valor_futuro_2").value);
+            var tasa_interes=parseFloat(document.getElementById("tasa_interes_5").value);
+            var periodo_tiempo=parseFloat(document.getElementById("periodo_tiempo_5").value);
+            document.getElementById("valor_anu_serie_uniforme").value= Math.round((valor_futuro*(tasa_interes/(Math.pow((1 + tasa_interes),periodo_tiempo) - 1)))*100)/100;
+
+        }
+
+        function valor_futuro_serie_uniforme(){
+            var valor_anual= parseFloat(document.getElementById("valor_anual_2").value);
+            var tasa_interes=parseFloat(document.getElementById("tasa_interes_6").value);
+            var periodo_tiempo=parseFloat(document.getElementById("periodo_tiempo_6").value);
+            document.getElementById("valor_futu_serie_uniforme").value= Math.round((valor_anual*((Math.pow((1 + tasa_interes),periodo_tiempo) - 1)/tasa_interes))*100)/100;
+
+        }
+
+    
+        function flujo_efectivo_anio(){
+            var cantidad_base= parseFloat(document.getElementById("cantidad_base").value);
+            var gradiante=parseFloat(document.getElementById("gradiante").value);
+            var periodo_tiempo=parseFloat(document.getElementById("periodo_tiempo_7").value);
+            document.getElementById("flujo_efec_anio").value= Math.round((cantidad_base + (periodo_tiempo - 1) * gradiante)*100)/100;
+
+    }
+
+    
+
+        function gradiente_aritmetico(){
+            var tasa_interes= parseFloat(document.getElementById("tasa_interes_7").value);
+            var gradiante=parseFloat(document.getElementById("gradiante_2").value);
+            var periodo_tiempo=parseFloat(document.getElementById("periodo_tiempo_8").value);
+            document.getElementById("gradiente_arit").value= Math.round((gradiante / tasa_interes * (((Math.pow((tasa_interes + tasa_interes),periodo_tiempo) - 1)/ tasa_interes * Math.pow((1 + tasa_interes),periodo_tiempo))-(periodo_tiempo/Math.pow((1 + tasa_interes),periodo_tiempo))))*100)/100;
+
+        }
+
+        function serie_anual_uniforme(){
+            var tasa_interes= parseFloat(document.getElementById("tasa_interes_8").value);
+            var gradiante=parseFloat(document.getElementById("gradiante_3").value);
+            var periodo_tiempo=parseFloat(document.getElementById("periodo_tiempo_9").value);
+            document.getElementById("serie_anu_uniforme").value = Math.round((gradiante * ((1/tasa_interes)-(periodo_tiempo/Math.pow((1 + tasa_interes),periodo_tiempo) - 1)))*100)/100;
+
+        }
+
+        function factor_gradiente_aritmetico(){
+            var tasa_interes= parseFloat(document.getElementById("tasa_interes_9").value);
+            var gradiante=parseFloat(document.getElementById("gradiante_4").value);
+            var periodo_tiempo=parseFloat(document.getElementById("periodo_tiempo_10").value);
+            document.getElementById("factor_gra_uniforme").value= Math.round((gradiante * ((1/tasa_interes)*(((Math.pow((1 + tasa_interes),periodo_tiempo) - 1) / tasa_interes) - periodo_tiempo)))*100)/100;
+
+        }
+
+
+</script>
 </body>
 
 </html>
