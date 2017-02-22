@@ -92,7 +92,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Formulas capitulo 2</h1>
+                    <h1 class="page-header">Formulas capitulo 4</h1>
                 </div>
                 <!-- /.col-lg-12 -->
         </div>
