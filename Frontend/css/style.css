@@ -41,8 +41,11 @@ h4 {
 
 img { max-width: 100%; }
 
+
+
 ::-moz-selection { background: #f35b3f; color: #fff; text-shadow: none; }
 ::selection { background: #f35b3f; color: #fff; text-shadow: none; }
+
 
 
 /***** Top menu *****/
@@ -78,7 +81,13 @@ ul.navbar-nav {
 .navbar-inverse ul.navbar-nav li .li-social a:focus { border: 0; color: #f35b3f; }
 
 
-
+.vinculo{
+	margin-top: 10px;
+	font-size: 38px;
+    font-weight: 100;
+    color: blue;
+    line-height: 50px;	
+}
 /***** Top content *****/
 
 .top-content { padding: 40px 0 170px 0; }
