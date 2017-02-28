@@ -31,7 +31,7 @@
 		</section>
 		<form method="post" action="" role="login">
 			<img src="../images/user.png" alt="" />
-			<input type="usuario" name="email" required placeholder="Usuario" class="form-control input-lg" />
+			<input type="usuario" name="usuario" required placeholder="Usuario" class="form-control input-lg" />
 			<input type="password" name="password" required placeholder="Password" class="form-control input-lg" />
 			<button type="submit" name="go" class="btn btn-block btn-info">Login</button>
 			<input type="checkbox" name="remember" value="1" checked /> Recordarme
