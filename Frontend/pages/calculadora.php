@@ -210,12 +210,12 @@
                            <table class="table"> 
 									<tr>
 										<td><label>interes</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="interes1" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="interes_acumulado_cp1" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Monto del prestamo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="monto1"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="valor_presente1_cp1"></td>
 
 									</tr>
 								</table>
@@ -226,8 +226,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado1"></td>
+										 <td><button class="btn btn-primary" onclick="TasaInteres_cp1();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="tasainteres_cp1"></td>
 
 									</tr>
 								</table>
@@ -260,12 +260,12 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Saldo Pagado</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="saldo2" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="valor_futuro_cp1" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Monto del prestamo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="monto2"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="valor_presente_cp1"></td>
 
 									</tr>
 								</table>
@@ -276,8 +276,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado2"></td>
+										 <td><button class="btn btn-primary" onclick="Interes_cp1();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="interes_cp1"></td>
 
 									</tr>
 								</table>
@@ -309,12 +309,12 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Interes Generado</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="interes_gene3" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="interes_acumulado_rendimiento_cp1" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Monto del prestamo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="monto3"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="valor_presente_rendimiento_cp1"></td>
 
 									</tr>
 								</table>
@@ -325,8 +325,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado3"></td>
+										 <td><button class="btn btn-primary" onclick="TasaDeRendimiento_cp1();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="tasainteres_rendimiento_cp1"></td>
 
 									</tr>
 								</table>
@@ -359,17 +359,17 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Monto del prestamo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="monto4" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="valor_presente2_cp1" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Periodos</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodos4"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="numero_de_periodos_cp1"></td>
 
 									</tr>
 									<tr>
 										<td><label>Interes</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="interes4"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="tasa_de_interes_cp1"></td>
 
 									</tr>
 								</table>
@@ -380,8 +380,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado4"></td>
+										 <td><button class="btn btn-primary" onclick="InteresSimple_cp1();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="interessimple_cp1"></td>
 
 									</tr>
 								</table>
@@ -413,24 +413,26 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Monto del prestamo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="monto5" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="valor_presente3_cp1" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Periodos</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodos5"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="numero_de_periodos1_cp1"></td>
 
 									</tr>
 									<tr>
 										<td><label>Interes</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="interes5"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="tasa_de_interes1_cp1"></td>
 
 									</tr>
+									<!--
 									<tr>
 										<td><label>Interes acumulado</label></td>
 										 <td><input type="text" class="form-control col-xs-6" id="interesA5"></td>
 
 									</tr>
+									-->
 								</table>
                         </a>
                          
@@ -439,8 +441,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado5"></td>
+										 <td><button class="btn btn-primary" onclick="InteresCompuesto_cp1();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="interescompuesto_cp1"></td>
 
 									</tr>
 								</table>
@@ -470,12 +472,12 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Entrada efectivo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="e_efectivo6" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="En_Efec_Ne_cp1" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Salida efectivo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="s_efectivo6"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="Sa_Efec_Ne_cp1"></td>
 
 									</tr>
 							
@@ -487,8 +489,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado6"></td>
+										 <td><button class="btn btn-primary" onclick="FlujoEfectivoNeto_cp1();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="flujoefectivoneto_cp1"></td>
 
 									</tr>
 								</table>
@@ -520,17 +522,17 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Inversion inicial</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="inversion_inicial7" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="valor_presente_cp2" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Tasa de interes</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="tasa_interes7"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="tasa_interes_cp2"></td>
 
 									</tr>
 									<tr>
 										<td><label>Periodo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodo7"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="periodo_tiempo_cp2"></td>
 									</tr>
 							
 								</table>
@@ -541,8 +543,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado7"></td>
+										 <td><button class="btn btn-primary" onclick="valor_futuro_cantidad_compuesta_cp2();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="valor_futuro_compuesta_cp2"></td>
 
 									</tr>
 								</table>
@@ -573,17 +575,17 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Valor futuro</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="valor_futuro8" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="valor_futuro_cp2" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Tasa de interes</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="tasa_interes8"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="tasa_interes_2_cp2"></td>
 
 									</tr>
 									<tr>
 										<td><label>Periodo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodo8"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="periodo_tiempo_2_cp2"></td>
 									</tr>
 							
 								</table>
@@ -594,8 +596,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado8"></td>
+										 <td><button class="btn btn-primary" onclick="valor_presente_inversion_inicial_cp2();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="valor_presente_inicial_cp2"></td>
 
 									</tr>
 								</table>
@@ -625,17 +627,17 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Valor anula uniforme</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="valor_anual9" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="valor_anual_cp2" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Tasa de interes</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="tasa_interes9"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="tasa_interes_3_cp2"></td>
 
 									</tr>
 									<tr>
 										<td><label>Periodo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodo9"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="periodo_tiempo_3_cp2"></td>
 									</tr>
 							
 								</table>
@@ -646,8 +648,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado9"></td>
+										 <td><button class="btn btn-primary" onclick= "valor_presente_serie_uniforme_cp2();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="valor_serie_uniforme_cp2"></td>
 
 									</tr>
 								</table>
@@ -678,17 +680,17 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Valor anula uniforme</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="valor_anual10" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="valor_presente_2_cp2" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Tasa de interes</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="tasa_interes10"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="tasa_interes_4_cp2"></td>
 
 									</tr>
 									<tr>
 										<td><label>Periodo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodo10"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="periodo_tiempo_4_cp2"></td>
 									</tr>
 							
 								</table>
@@ -699,8 +701,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado10"></td>
+										 <td><button class="btn btn-primary" onclick="valor_anual_uniforme_cp2();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="valor_anu_uniforme_cp2"></td>
 
 									</tr>
 								</table>
@@ -730,17 +732,17 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Valor futuro</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="futuro11" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="valor_futuro_2_cp2" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Tasa de interes</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="tasa_interes11"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="tasa_interes_5_cp2"></td>
 
 									</tr>
 									<tr>
 										<td><label>Periodo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodo11"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="periodo_tiempo_5_cp2"></td>
 									</tr>
 							
 								</table>
@@ -751,8 +753,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado11"></td>
+										 <td><button class="btn btn-primary" onclick="valor_anual_serie_uniforme_cp2();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="valor_anu_serie_uniforme_cp2"></td>
 
 									</tr>
 								</table>
@@ -784,17 +786,17 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Valor anual</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="valor_anual12" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="valor_anual_2_cp2" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Tasa de interes</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="tasa_interes12"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="tasa_interes_6_cp2"></td>
 
 									</tr>
 									<tr>
 										<td><label>Periodo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodo12"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="periodo_tiempo_6_cp2"></td>
 									</tr>
 							
 								</table>
@@ -805,8 +807,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado12"></td>
+										 <td><button class="btn btn-primary" onclick="valor_futuro_serie_uniforme_cp2();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="valor_futu_serie_uniforme_cp2"></td>
 
 									</tr>
 								</table>
@@ -835,14 +837,20 @@
                         </div>
                         <a href="#">
                            <table class="table"> 
+                                    <tr>
+                                        <td><label>Cantidad Base</label></td>
+                                         <td><input id="cantidad_base_cp2" type="text" class="form-control col-xs-6"></td>
+
+                                    </tr>
+                           
 									<tr>
 										<td><label>Gradiente</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="gradiente13" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="gradiante_cp2" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Periodo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodo13"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="periodo_tiempo_7_cp2"></td>
 
 									</tr>
 
@@ -855,8 +863,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado13"></td>
+										 <td><button class="btn btn-primary"  onclick="flujo_efectivo_anio_cp2();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="flujo_efec_anio_cp2"></td>
 
 									</tr>
 								</table>
@@ -887,17 +895,17 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Gradiente</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="gradiente14" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="gradiante_2_cp2" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Interes</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="interes14"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="tasa_interes_7_cp2"></td>
 
 									</tr>
 									<tr>
 										<td><label>Periodo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodo14"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="periodo_tiempo_8_cp2"></td>
 									</tr>
 							
 								</table>
@@ -908,8 +916,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado12"></td>
+										 <td><button class="btn btn-primary" onclick="gradiente_aritmetico_cp2();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="gradiente_arit_cp2"></td>
 
 									</tr>
 								</table>
@@ -940,18 +948,19 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Gradiente</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="gradiente15" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="gradiante_3_cp2" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Periodo de tiempo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodo15"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="periodo_tiempo_9_cp2"></td>
 
 									</tr>
-									<tr>
-									<td><label>Periodo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodo15"></td>
-									</tr>
+								    <tr>
+                                        <td><label>Tasa de interés</label></td>
+                                         <td><input id="tasa_interes_8_cp2" type="text" class="form-control col-xs-6"></td>
+
+                                    </tr>
 							
 								</table>
                         </a>
@@ -961,8 +970,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado15"></td>
+										 <td><button class="btn btn-primary" onclick="serie_anual_uniforme_cp2();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="serie_anu_uniforme_cp2"></td>
 
 									</tr>
 								</table>
@@ -993,17 +1002,17 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Gradiente</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="gradiente16" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="gradiante_4_cp2" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Interes</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="interes16"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="tasa_interes_9_cp2"></td>
 
 									</tr>
 									<tr>
 									<td><label>Periodo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodo16"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="periodo_tiempo_10_cp2"></td>
 									</tr>
 							
 								</table>
@@ -1014,8 +1023,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado16"></td>
+										 <td><button class="btn btn-primary" onclick="factor_gradiente_aritmetico_cp2();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="factor_gra_uniforme_cp2"></td>
 
 									</tr>
 								</table>
@@ -1046,12 +1055,12 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Interes por periodo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="interes17" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="ti_tasa_cp4" ></td>
 
 									</tr>
 							
 									<td><label>Cantidad de periodos</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodo17"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="ti_p_cp4"></td>
 									</tr>
 							
 								</table>
@@ -1062,8 +1071,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado17"></td>
+										 <td><button class="btn btn-primary" onclick="Tasa_Nominal_cp4();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="ti_cal_cp4"></td>
 
 									</tr>
 								</table>
@@ -1093,17 +1102,17 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Tasa de interes nominal</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="interes18" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="te_r_cp4" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Frecuencia de composicion</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="frecuencia18"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="te_m_cp4"></td>
 
 									</tr>
 									<tr>
 									<td><label>Periodo de tiempo</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodo18"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="te_t_cp4"></td>
 									</tr>
 							
 								</table>
@@ -1114,8 +1123,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado18"></td>
+										 <td><button class="btn btn-primary" onclick="Tasa_Efectiva_cp4();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="te_calc_cp4"></td>
 
 									</tr>
 								</table>
@@ -1134,7 +1143,8 @@
                         <div class="panel-heading">
                             <div class="row" >
                                 <div class="col-xs-3">
-                                    <div id="final">Valor futuro al final de 1 año</div>
+                                   <div id="final">valor futuro con una tasa efectiva</div>
+                                    <!--<div id="final">Valor futuro al final de 1 año</div> -->
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     
@@ -1142,6 +1152,7 @@
                             </div>
                         </div>
                         <a href="#">
+                          <!--
                            <table class="table"> 
 									<tr>
 										<td><label>Valor presente</label></td>
@@ -1167,6 +1178,24 @@
 									</tr>
 							
 								</table>
+                       -->
+                        <table class="table"> 
+									<tr>
+										<td><label>Numero de Periodos de Capitalización por Año</label></td>
+										 <td><input id="vf_m_cp4" type="text" class="form-control col-xs-6"></td>
+
+									</tr>
+									<tr>
+										<td><label>Tasa de Interés Efectiva por Periodo de Composición </label></td>
+										 <td><input id="vf_i_cp4" type="text" class="form-control col-xs-6"></td>
+
+									</tr><tr>
+										<td><label>Monto Principal</label></td>
+										 <td><input id="vf_p_cp4" type="text" class="form-control col-xs-6"></td>
+
+									</tr>
+									
+								</table>
                         </a>
                          
                     </div>
@@ -1174,8 +1203,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado19"></td>
+										 <td><button class="btn btn-primary" onclick="Valor_Futuro_cp4();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="vf_calc_cp4"></td>
 
 									</tr>
 								</table>
@@ -1206,12 +1235,12 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Numero de periodos</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodos20" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="t_pc_m_cp4" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Tasa de interes</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="interes20"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="t_pc_cp4"></td>
 
 									</tr>
 					
@@ -1224,8 +1253,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado20"></td>
+										 <td><button class="btn btn-primary" onclick="Tasa_Interes_anual_Efectiva_cp4();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="t_pc_calc_cp4"></td>
 
 									</tr>
 								</table>
@@ -1256,12 +1285,12 @@
                            <table class="table"> 
 									<tr>
 										<td><label>Numero de periodos</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="periodos21" ></td>
+										 <td><input type="text" class="form-control col-xs-6" id="tie_pc_m_cp4" ></td>
 
 									</tr>
 									<tr>
 										<td><label>Tasa de interes</label></td>
-										 <td><input type="text" class="form-control col-xs-6" id="interes21"></td>
+										 <td><input type="text" class="form-control col-xs-6" id="tie_pc_i_cp4"></td>
 
 									</tr>
 					
@@ -1274,8 +1303,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado21"></td>
+										 <td><button class="btn btn-primary" onclick="TI_Efectiva_Por_Pc_cp4();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="tie_pc_calc_cp4"></td>
 
 									</tr>
 								</table>
@@ -1302,7 +1331,8 @@
                             </div>
                         </div>
                         <a href="#">
-                           <table class="table"> 
+                           <table class="table">
+                           <!-- 
 									<tr>
 										<td><label>Numero de periodos</label></td>
 										 <td><input type="text" class="form-control col-xs-6" id="periodos22" ></td>
@@ -1314,7 +1344,12 @@
 
 									</tr>
 					
-							
+							-->
+							<tr>
+										<td><label>Tasa Anual Nominal</label></td>
+										 <td><input id="ta_nom_cp4" type="text" class="form-control col-xs-6"></td>
+
+									</tr>
 								</table>
                         </a>
                          
@@ -1323,8 +1358,8 @@
                             <div class="panel-footer row">
 								<table class="table"> 
 									<tr>
-										 <td><button class="btn btn-primary">Calcular</button></td>
-										 <td><input type="text" class="form-control col-xs-3" id="resultado22"></td>
+										 <td><button class="btn btn-primary" onclick="TIE_Para_Capitalizacion_Continua_cp4();">Calcular</button></td>
+										 <td><input type="text" class="form-control col-xs-3" id="ta_nom_calc_cp4"></td>
 
 									</tr>
 								</table>
@@ -1363,6 +1398,8 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
+    <!-- Funciones javascript -->
+    <script type="text/javascript" src="../js/CalculadoraPrincipal.js"></script>
 
 </body>
 
