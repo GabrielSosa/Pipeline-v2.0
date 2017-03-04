@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	include '../../Backend/conexion.php';
+	if(isset($_SESSION['email'])){
+		echo '<script> window.location="logout.php"; </script>';
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +37,7 @@
 		<section>
 			<h4>Iniciar Sesion</h4>
 		</section>
-		<form method="post" action="" role="login">
+		<form method="post" action="../../Backend/validar.php" role="login">
 			<img src="../images/user.png" alt="" />
 			<input type="usuario" name="email" required placeholder="Usuario" class="form-control input-lg" />
 			<input type="password" name="password" required placeholder="Password" class="form-control input-lg" />
