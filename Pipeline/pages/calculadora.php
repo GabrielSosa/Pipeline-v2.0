@@ -37,6 +37,15 @@
 
 <body>
 
+<?php 
+session_start();
+    if (!isset($_SESSION['usuario']) AND $_SESSION['usuario'] != 1) {
+        header("location: login.php");
+        exit;
+        }
+
+?>
+
     <div id="wrapper">
 
         <!-- Navigation -->
@@ -67,7 +76,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         
-                        <li><a href="login.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -285,7 +294,7 @@
                                         <label class="col-xs-3 control-label">Salida de Efectivo</label>
                                         <div class="col-xs-5">
                                             <input type="text" class="form-control" name="salidaEfectivo" />
-                                        </div>gradiente
+                                        </div>
                                     </div>
 
                                     <div class="form-group">

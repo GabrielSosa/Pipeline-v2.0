@@ -1,10 +1,4 @@
-<?php
-	session_start();
-	include '../Backend/conexion.php';
-	if(isset($_SESSION['email'])){
-		echo '<script> window.location="logout.php"; </script>';
-	}
-?>
+
 
 <!DOCTYPE html>
 <html>

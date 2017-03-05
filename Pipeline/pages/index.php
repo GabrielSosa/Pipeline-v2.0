@@ -37,6 +37,15 @@
 
 <body>
 
+<?php 
+session_start();
+    if (!isset($_SESSION['usuario']) AND $_SESSION['usuario'] != 1) {
+        header("location: login.php");
+        exit;
+        }
+
+?>
+
     <div id="wrapper">
 
         <!-- Navigation -->
@@ -67,7 +76,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         
-                        <li><a href="login.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -350,8 +359,33 @@
             </div>
 
             
-            <!-- /.row -->
-            <div class="row">
+            <?php 
+
+include '../Backend/conexion.php';
+
+require_once( '../Backend/conexion.php');
+
+$conexion = new Conexion();
+
+$usuario = $_SESSION['usuario'];
+
+$query_usuario="SELECT * FROM tbl_usuarios WHERE usuario='".$usuario."';";
+
+$conn = $conexion->getConexion();
+
+    // Ejecutamos la consulta
+    $resultado = mysqli_query($conexion->getConexion(), $query_usuario);
+    //  obtenermos la cantidad de registros de la consulta
+    $usuarioQ = mysqli_fetch_array($resultado, MYSQLI_NUM);
+    $idUsuario = $usuarioQ[0];
+
+$queryProyectos="SELECT * FROM tbl_proyectos";
+$results= mysqli_query($conexion->getConexion(), $queryProyectos);
+$contador = 0;
+foreach ($results as $result) {
+    $contador++;
+    echo 
+    '<div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
@@ -360,8 +394,8 @@
                                     <i class="fa fa-tasks fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">1</div>
-                                    <div>Proyecto 1</div>
+                                    <div class="huge">'.$contador.'</div>
+                                    <div>'.$result['nombre_proyecto'].'</div>
                                 </div>
                             </div>
                         </div>
@@ -373,74 +407,14 @@
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-green">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-tasks fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">2</div>
-                                    <div>Proyecto 2</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">Ver Detalles</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-yellow">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-tasks fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">3</div>
-                                    <div>Proyecto 3</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">Ver Detalles</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-red">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-tasks fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">4</div>
-                                    <div>Proyecto 4</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">Ver Detalles</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                </div>';
+}
+
+            ?>
+
+
+
+            
 
             <!-- /.row -->
             
